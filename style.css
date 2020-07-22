@@ -48,9 +48,16 @@
   --weight-regular: 400;
 }
 
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(#fe918d);
 }

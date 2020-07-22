@@ -6,6 +6,7 @@
     <title>5문장</title>
     <meta name="description" content="5문장으로 영화추천서비스" />
     <meta name="author" content="그로처" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -95,7 +96,82 @@
       </div>
     </section>
     <!-- Form -->
-    <section id="form"></section>
+    <section id="form">
+      <article class="add">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>등급</th>
+              <th>혜택</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>추천글을 받아보세요</td>
+            </tr>
+
+            <tr>
+              <th>2</th>
+              <td>추천러가 되보세요</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>3</th>
+              <td>커뮤니티를 즐겨보세요</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+
+      <article class="add">
+        <form action="contact.php" method="post">
+          <fieldset>
+            <input type="checkbox" name="개인정보동의" value="personal" />
+            개인정보동의하시나요?
+            <ul>
+              <li>
+                이름:
+                <input
+                  type="text"
+                  id="name"
+                  autofocus
+                  required
+                  placeholder="이름을 입력해주세요"
+                />
+              </li>
+              <li>
+                이메일:
+                <input
+                  type="email"
+                  id="user_email"
+                  autofocus
+                  required
+                  placeholder="이메일을 입력해주세요"
+                />
+              </li>
+              <li>연락처: <input type="tel" id="user_tel" /></li>
+            </ul>
+            <input type="submit" value="문의하기" />
+          </fieldset>
+        </form>
+        <form>
+          <p>혜택기간</p>
+          <input type="radio" name="gender" value="man" checked /> 한달<br />
+          <input type="radio" name="gender" value="women" /> 2달<br />
+          <input type="radio" name="gender" value="women" /> 3달<br />
+        </form>
+        <form>
+          등급을 선택해주세요
+          <select name="color" size="2" multiple>
+            <option value="red">1등급</option>
+            <option value="blue">2등급</option>
+            <option value="green">3등급</option>
+          </select>
+        </form>
+      </article>
+    </section>
     <!--Footer-->
     <section id="footer">
       <p class="footer__title">우리의 시간은 소중합니다</p>
