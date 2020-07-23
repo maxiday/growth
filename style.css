@@ -11,15 +11,24 @@ a {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: orange;
+  background-color: green;
   align-items: center;
   color: white;
-  padding: 16px;
+  padding: 8px;
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+li {
+  list-style: none;
+}
+
+button {
+  background-color: greenyellow;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .navbar__menu {
@@ -39,5 +48,32 @@ ul {
 }
 
 .navbar__menu__item:hover {
-  background-color: darkorange;
+  background-color: greenyellow;
+}
+
+#hero {
+  background: darkgreen center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero__main {
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  border: 2px solid whitesmoke;
+}
+
+.hero__title,
+.hero__description {
+  color: white;
+}
+.hero__contact {
+  color: whitesmoke;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 4px;
 }
